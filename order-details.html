@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Order Form</title>
+<link rel="stylesheet" href="order-details.css">
+</head>
+<body>
+
+<div class="order-container">
+  <h2>🍽️ Place Your Order</h2>
+
+  <form id="orderForm">
+
+    <label>Full Name</label>
+    <input type="text" placeholder="Enter your name" required>
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="+92 XXX XXX XXXX" required>
+
+    <label>Delivery Address</label>
+    <textarea placeholder="Enter your address" required></textarea>
+
+    <label>Select Dish</label>
+    <select required>
+      <option value="">-- Choose Food --</option>
+      <option>Biryani</option>
+      <option>Karahi</option>
+      <option>BBQ Platter</option>
+      <option>Burger</option>
+      <option>Pizza</option>
+    </select>
+
+    <label>Quantity</label>
+    <input type="number" min="1" value="1">
+
+    <label>Payment Method</label>
+    <select required>
+      <option>Cash on Delivery</option>
+      <option>Credit Card</option>
+      <option>EasyPaisa / JazzCash</option>
+    </select>
+
+    <button type="submit">Order Now</button>
+
+  </form>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,496 @@
+*{
+     padding: 0%;
+     margin: 0%;
+}
+
+.header-con{
+     height: 750px;
+     display: flex;
+     width: 100%;
+     background-image: url(./images/pic\ 1.png) url(./images/pic\ 2.png) url(images/pic\ 3.png);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     animation: slideHeader 15s infinite ease-in-out;
+}
+@keyframes slideHeader {
+     0%, 100% { background-image: url("./images/pic 1.png"); }
+     33% { background-image: url("./images/pic 2.png"); }
+     66% { background-image: url("images/pic 3.png"); }
+}
+.nav-1{
+     width: 25%;  
+     padding: 25px;  
+}
+.logo{
+     width: 50%;     
+}
+.nav-2{
+    width: 55%;  
+   justify-content: space-between;
+    text-align: center;
+    text-decoration: none;   
+    padding: 40px 30px 30px 30px;
+    margin: 0px 0px 0px 60px;
+}
+.nav-left {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+.nav-left li a{
+    text-decoration: none; 
+    color: #ffffff;
+    font-size: larger ;
+    font-weight: bolder; 
+}
+.nav-left li a:hover{
+  color: #cdb894;
+  cursor: pointer;
+}   
+.nav-3{
+     width: 20%;
+     text-align: left;
+     padding: 20px;
+     height: 50px;
+     
+}
+.reserve{
+    padding: 10px 20px 10px 20px;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #0b2c2d;
+    border-radius: 12px;
+    color: #ffffff;
+   
+}
+.heading{
+     text-align: center;
+     padding: 100px 0px 100px 0px ;
+     font-size: xx-large;
+     font-weight: 900;
+     font-family: 'Times New Roman', Times, serif;
+      
+}
+.menu{
+     padding: 10px 25px 10px 25px;
+     font-family: 'Times New Roman', Times, serif;
+     cursor: pointer;
+     font-size: larger;
+     font-weight: bolder;
+     background-color: #0b2c2d;
+     border-radius: 12px;
+     color: #ffffff;
+     margin: 60px 0px 0px 0px;
+    
+     
+}
+.main-container{
+     background-image: url(./images/bg.png);
+     background-size: fill;
+     background-repeat: repeat; 
+     padding: 20px 0px 0px 0px;
+}
+.main-heading{
+      justify-self: center;
+      box-shadow: 10px 10px 40px 5px ;
+      height: 300px;
+      margin: 100px 0px 0px 0px;
+}
+
+.plater-con{ 
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+    
+
+}
+.product-card{
+     width: 300px;
+    height: 500px;
+    background-color: #d5d5d5;
+    border-radius: 12px;  
+    box-shadow: 10px 10px 40px 5px ;
+    overflow: hidden;
+}
+.card-img{
+     width: 300px;
+     height: 300px;
+     object-fit: cover;
+     border-radius: 12px 12px 0px 0px;
+     transition: transform 0.4s ease;
+}
+.card-img:hover {
+  transform: scale(1.1);
+}
+.product-card p{
+     padding: 5px;
+     text-align: center;
+     font-weight: bolder;
+     font-size: large;
+      font-family: 'Times New Roman', Times, serif;
+}
+.product-card h3{
+      padding: 20px 0px 5px 0px;
+     text-align: center;
+     font-weight: bolder;
+     font-size: x-large;
+      font-family: 'Times New Roman', Times, serif;
+}
+.order{
+     padding: 10px 30px 10px 30px;
+     font-family: 'Times New Roman', Times, serif;
+     cursor: pointer;
+     font-size: larger;
+     font-weight: bolder;
+     background-color: #0b2c2d;
+     border-radius: 12px;
+     color: #ffffff ;
+     margin: 25px 0px 0px 0px ;
+}
+.banner{
+    justify-self: center;
+    padding: 100px 0px 0px 0px ;
+}
+.banner-img {
+    justify-self: center;
+    box-shadow: 10px 10px 40px 5px rgba(0,0,0,0.3);
+    height: 300px;
+    border-radius: 15px;
+}
+.footer {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(0.5px);
+    color: #fff;
+    padding: 60px 0 20px;    
+}
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.footer-box {
+    width: 300px;
+}
+.footer-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.footer-links {
+    list-style: none;
+}
+.footer-links li {
+    margin: 8px 0;
+}
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.9;
+    transition: 0.3s;
+}
+.footer-links a:hover {
+    opacity: 1;
+    padding-left: 5px;
+}
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    
+}
+
+/* .....popup......... */
+
+.popup {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 9999;
+}
+
+.popup-content {
+  background: #fff;
+  width: 70%;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.popup-grid {
+  display: flex;
+  gap: 20px;
+}
+
+.popup-img {
+  width: 400px;
+  height: 240px;
+  border-radius: 10px;
+}
+
+.order-btn {
+  padding: 12px 30px;
+  background: #0b2c2d;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 12px;
+  margin: 10px 0px 0px 0px;
+}
+#popupName {
+    padding: 20px 0px 10px 0px;
+}
+#popupPrice {
+    padding: 0px 0px 10px 0px;
+}
+#rs {
+   padding: 0px 0px 10px 0px; 
+}
+#popupDesc {
+   padding: 0px 0px 10px 0px;  
+}
+
+/* ============================= */
+/*   RESPONSIVE MEDIA QUERIES    */
+/* ============================= */
+
+
+ /* .................media query for mobile............ */
+    
+ @media (max-width: 600px) {
+
+ .header-con{
+    height: 400px;  
+} 
+/* Logo Section */
+.nav-1{
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+.logo{
+    width: 60px;
+}
+
+/* nav 2 */
+.nav-2{
+    width: 400px;
+    padding: 10px;
+    margin: 0;
+    
+}
+.nav-left{
+    gap: 8px;
+    justify-self: center;
+}
+.nav-left li a{
+    font-weight: normal;
+    font-size: 12px;
+}
+
+/* Reserve Button */
+.nav-3{
+     width: 100px;
+     text-align: center;
+     padding: 10px;
+     text-align: center;
+}
+.reserve{
+     width: 60px;
+     font-size: 6px;
+     padding: 4px 8px 4px 8px;
+    
+}
+
+/* banner....... */
+
+.banner{
+     padding: 15px 0px 0px 0px; 
+}
+.banner-img {
+     height: 100px;
+     box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+}
+.heading{
+    font-size: 20px;
+    height: 120px;
+    padding: 50px 0px 20px 0px ;
+}
+.menu{
+    margin: 0%;
+}
+
+/* .product-card............... */
+
+.product-card{
+     width: 130px;
+     height: 280px;
+}
+.card-img{
+     width: 150px;
+     height: 150px;
+     object-fit: cover;
+     border-radius: 12px 12px 0px 0px;
+}
+.plater-con{
+     gap: 23px;
+}
+.product-card h3{
+     font-size: 13px;
+}
+.product-card p{
+     font-size: 12px;
+}
+
+            /* order button */
+
+.order{
+     padding: 5px 15px 5px 15px;
+     font-size: 12px;
+     font-weight: bolder;
+     background-color: #0b2c2d;
+     border-radius: 12px;
+     color: #ffffff ;
+     margin: 13px 0px 0px 0px ;    
+}
+
+/* footer box................ */
+
+.footer-container {
+     flex-direction: column;
+}
+.footer-box{
+     text-align: center;
+     align-self: center;
+     padding: 0px 0px 10px 0px;
+}
+.footer-bottom{
+     text-align: center;
+}
+
+/* .popup section... */
+
+.popup-img{
+     width: 150px;
+     height: 150px;
+}
+}
+
+
+/* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+
+.header-con{
+    height: 600px;
+}
+
+/* Logo Section */
+.nav-1{
+    width:200px ;
+}
+.logo{
+    width: 80px;
+}
+
+/* Navbar Links */
+.nav-2{
+    width:592px ;
+}
+.nav-left{
+    gap: 15px;
+    justify-content: center;
+    text-align: center;
+}
+.nav-left li a{
+    font-size: 15px;
+}
+
+/* Reserve Button */
+.nav-3{
+    width: 200px;
+}
+.reserve{
+    font-size: 14px;
+    padding: 8px 16px;
+}
+
+/* Banner Section */
+.banner{
+    padding: 20px 0;
+}
+.banner-img{
+    height: 200px;
+}
+.heading{
+    font-size: 28px;
+    padding: 40px 0;
+}
+
+/* Product Cards */
+.plater-con{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.product-card{
+    width: 250px;
+    height: 350px;
+}
+.card-img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+.product-card h3{
+    font-size: 16px;
+}
+.product-card p{
+    font-size: 14px;
+}
+
+/* Order Button */
+.order{
+    font-size: 14px;
+    padding: 8px 18px;
+}
+
+/* Footer */
+.footer-container{
+    flex-direction: column;
+}
+.footer-box{
+     text-align: center;
+     align-self: center;
+     padding: 0px 0px 10px 0px;
+}
+
+/* Popup */
+.popup-img{
+    width: 180px;
+    height: 180px;
+}
+
+}

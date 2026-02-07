@@ -1,30 +1,38 @@
-// Toggle Navbar
-const hamburger = document.getElementById('hamburger');
-const navMenu = document.getElementById('nav-menu');
+// Open popup with dynamic data
+document.querySelectorAll(".openPopup").forEach(button => {
+  button.addEventListener("click", function() {
 
-hamburger.addEventListener('click', () => {
-    navMenu.classList.toggle('active');
+    document.getElementById("popupName").innerText = this.dataset.name;
+    document.getElementById("popupPrice").innerText = this.dataset.price;
+    document.getElementById("popupImg").src = this.dataset.img;
+    document.getElementById("popupDesc").innerText = this.dataset.desc;
+
+    document.getElementById("popup").style.display = "block";
+  });
 });
 
-// API Calling for Form
-const form = document.getElementById('orderForm');
-const status = document.getElementById('formStatus');
+// Close popup
+document.querySelector(".close-btn").onclick = function() {
+  document.getElementById("popup").style.display = "none";
+};
 
-if(form) {
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        const formData = new FormData(form);
-        status.innerHTML = "Processing....";
+// Close when clicking outside
+window.onclick = function(e) {
+  if (e.target == document.getElementById("popup")) {
+    document.getElementById("popup").style.display = "none";
+  }
+};
 
-        fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            body: formData
-        }).then(res => {
-            if(res.status === 200) {
-                status.innerHTML = "complains done sorry for our regarding mistakes thanks for your compliments! Check Email.";
-                status.style.color = "lightgreen";
-                form.reset();
-            }
-        });
-    });
-}
+//   order-detail
+
+document.getElementById("orderForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  alert("✅ Your order has been submitted! We will contact you soon.");
+});
+
+
+
+
+
+
+
