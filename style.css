@@ -91,7 +91,20 @@ body{
 .logo { width: 100px; }
 .nav-left { display: flex; list-style: none; gap: 30px; }
 .nav-left li a { text-decoration: none; color: #000; font-weight: bold; }
-.reserve { background: #0e2b13; color: white; padding: 10px 20px; border-radius: 8px; border: none; cursor: pointer; }
+.reserve-btn {
+    margin-top: -15px;
+    padding: 10px 20px;
+    font-weight: 900;
+    font-size: large;
+    cursor: pointer;
+    background-color: var(--primary-color);
+    border-radius: 12px;
+    color: var(--secondary-color);
+    a:link {
+  color: white; 
+}
+    
+}
 
 /* Hamburger */
 .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
