@@ -38,9 +38,7 @@ body {
 
 .logo {
     margin-top: 4px;
-    height: 15px;
-    object-fit: cover;
-    width: auto;
+    width: 120px
 }
 
 .nav-links {
