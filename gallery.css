@@ -235,10 +235,10 @@ img:not(:hover) {
   .gallery_wrapper img,
   .img {
     width: 100%;
-    grid-column: span 1;   /* 🔥 IMPORTANT FIX */
+    grid-column: span 1;   
     aspect-ratio: 1;
     object-fit: cover;
-    clip-path: none;      /* blob remove on mobile */
+    clip-path: none;      
     border-radius: 12px;
   }
 
